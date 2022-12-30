@@ -1,14 +1,36 @@
-import React from 'react';
+import React, {Component} from 'react';
 import  ReactDOM  from 'react-dom';
+import Main from './component/Main'
+import './styles/stylesheets.css'
 
 
-const element = React.createElement('ol',null, 
-React.createElement('li',null,'take out the trash'),
-React.createElement('li',null,'shovel the driveway'),
-React.createElement('li',null,'walk the dog')
+
+
+ReactDOM.render(<Main/>,document.getElementById('root')
 );
-ReactDOM.render(element,document.getElementById('root')
-);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
