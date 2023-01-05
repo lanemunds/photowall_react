@@ -101,12 +101,15 @@ html {
     resize: vertical;
    }
    .addIcon {
-    background: url("https://image.flaticon.com/icons/svg/60/60740.svg") center no-repeat;
-    background-size: contain;
-    padding: 40px;
+   background-color: black;
+   color: #d3d3d3;
+   font-size: 40pt;
+    padding: 10px;
     display: table;
     margin: 20px auto;
     border: none;
+    border-radius: 100%;
+    width: 12rem;
    }
    .button-container {
     margin: 0 auto;
