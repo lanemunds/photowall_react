@@ -34,6 +34,14 @@ class Main extends Component{
       posts: state.posts.filter(post => post !== postRemoved)
     }))
   }
+  componentDidMount(){
+    console.log('componentDidMount')
+
+  }
+  componentDidUpdate(){
+    console.log(prevState.posts)
+    console.log(this.state)
+  }
     render(){
         return<div>
                 <Title title = {'Photowall'}/>
