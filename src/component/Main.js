@@ -36,6 +36,11 @@ class Main extends Component{
       posts: state.posts.filter(post => post !== postRemoved)
     }))
   }
+  AddPhoto(postSubmitted){
+    this.setState(state=> ({
+      posts: state.posts.concat([postSubmitted])
+    }))
+  }
 
   
     render(){
@@ -49,7 +54,14 @@ class Main extends Component{
      
           )}/>
 
-            <Route path = '/addPhoto' component = {AddPhoto}/>
+            <Route path = '/addPhoto' render = {({history})=>(
+              <AddPhoto onAddPhoto = {(addedPost)=>{
+              this.AddPhoto(addedPost)
+              history.push('/')
+
+              }}/>
+
+            )}/>
      </div>
         
     }
